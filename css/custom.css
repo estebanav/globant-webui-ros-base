@@ -29,3 +29,110 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+input:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+
+.search-desc {
+  font-size: small;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.search-desc span:first-of-type,
+#data h2 span:first-of-type,
+#data h4 span:first-of-type {
+  float: left;
+  text-transform:capitalize;
+}
+
+.search-desc span:last-of-type,
+#data h2 span:last-of-type,
+#data h4 span:last-of-type {
+  float: right;
+}
+
+/* =Data Section */
+#data {
+  overflow: hidden;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  max-height: 0px;
+}
+
+#data.show {
+  max-height: 100%;
+  margin-bottom: 30px;
+}
+
+#data img {
+  float: left;
+  margin-right: 10px;
+  width: 30%;
+  box-shadow: 0 5px 5px -3px black;
+}
+
+#data > .stars {
+  float: left;
+  clear: left;
+  width: 30%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#data > div {
+  float: right;
+  max-width: 68%;
+}
+
+#data a {
+  font-size: .5em;
+}
+
+#data > div > span:last-of-type {
+  clear: both;
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+
+#data h1 span,
+#data h2,
+#data h4 {
+  font-weight: 400;
+}
+
+#data h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+}
+
+#data h2 {
+  overflow: hidden;
+  font-style: italic;
+}
+
+#data h3 {
+  display: inline;
+  font-weight: 600;
+}
+
+star:before {
+  font-size: 1.5em;
+  content: "\2606";
+}
+
+star.full:before {
+  content: "\2605";
+  text-shadow: -1px 1px black;
+  color: gold;
+}

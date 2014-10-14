@@ -12,10 +12,13 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">	
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">    
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+       
+
     </head>
     <body>
          <!-- Begin page content -->
@@ -25,8 +28,13 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
-                    <img src="img/logo-globant.png" alt="Globant Logo"/>
+                    <input id="movie-search" placeholder="Search your favorite movie or series...">
                 </div>
+
+                <div class="col-xs-12 col-md-12 text-center">
+                    <div id="data"></div>
+                </div>
+
             </div>
         </div>
 
@@ -36,7 +44,8 @@
           </div>
         </div>
 
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>                
-        <script src="js/main.js"></script>        
+        <script src="js/vendor/jquery-1.11.1.min.js"></script> 
+        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>               
+        <script type="text/javascript" src="js/main.js"></script>     
     </body>
 </html>
