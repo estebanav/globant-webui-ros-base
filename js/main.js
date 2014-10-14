@@ -2,6 +2,8 @@ var map;
 $('document').ready(function(){
     // Place your JavaScript code here.
     $(document).ready(function(){
+
+        // Using gmaps.js -- http://hpneo.github.io/gmaps/
         map = new GMaps({
             el: '#gMap',
             lat: -12.043333,
