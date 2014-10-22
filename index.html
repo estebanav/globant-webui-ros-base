@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
-         <!-- Begin page content -->
+        <!-- Begin page content -->
         <div class="container">
             <div class="page-header">
                 <h1 class="text-center">Globant Rosario HACKATHON</h1>
@@ -28,15 +28,49 @@
                     <img src="img/logo-globant.png" alt="Globant Logo"/>
                 </div>
             </div>
+			<div class="jumbotron row">
+                <div class="col-xs-3 text-center">
+					<!-- Markup for Twitter Share button -->
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.globant.com/">Tweet</a>
+					<!-- /Markup for Twitter Share button -->
+                </div>
+                <div class="col-xs-3 text-center">
+					<!-- Markup for Twitter Follow button -->
+						<a href="https://twitter.com/Globant" class="twitter-follow-button" data-show-count="false">Follow @Globant</a>
+					<!-- /Markup for Twitter Follow button -->
+                </div>
+                <div class="col-xs-3 text-center">
+					<!-- Markup for Twitter Hashtag button -->
+						<a href="https://twitter.com/intent/tweet?button_hashtag=Hackathon" class="twitter-hashtag-button" data-related="Globant">Tweet #Hackathon</a>
+					<!-- /Markup for Twitter Hashtag button -->
+                </div>
+                <div class="col-xs-3 text-center">
+					<!-- Markup for Twitter Mention button -->
+						<a href="https://twitter.com/intent/tweet?screen_name=Globant&text=Great%20Hackathon%20event!%20Now%20let's%20create%20wonderful%20Mobile%20Apps!" class="twitter-mention-button" data-size="large">Tweet to @Globant</a>
+					<!-- /Markup for Twitter Mention button -->
+                </div>
+            </div>
         </div>
 
         <div class="footer">
-          <div class="container">
-            <p class="text-muted">&copy; Globant 2014</p>
-          </div>
+            <div class="container">
+                <p class="text-muted">&copy; Globant 2014</p>
+            </div>
         </div>
 
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>                
-        <script src="js/main.js"></script>        
+        <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+			// Load the Twitter Widgets components asynchronously
+		    window.twttr = (function (d, s, id) {
+		        var t, js, fjs = d.getElementsByTagName(s)[0];
+		        if (d.getElementById(id)) return;
+  		        js = d.createElement(s); js.id = id; js.type = 'text/javascript';
+  		        js.src = 'https://platform.twitter.com/widgets.js';
+		        fjs.parentNode.insertBefore(js, fjs);
+
+		        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+		    })(document, 'script', 'twitter-wjs');
+        </script>
     </body>
 </html>
