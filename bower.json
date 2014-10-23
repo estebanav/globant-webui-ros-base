@@ -1,0 +1,23 @@
+{
+  "name": "globant-webui-ros-base",
+  "version": "0.0.0",
+  "homepage": "https://github.com/estebanav/globant-webui-ros-base",
+  "authors": [
+    "Frank Kalbermatten <frankkalbermatten@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}
