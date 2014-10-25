@@ -60,17 +60,5 @@
 
         <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript">
-			// Load the Twitter Widgets components asynchronously
-		    window.twttr = (function (d, s, id) {
-		        var t, js, fjs = d.getElementsByTagName(s)[0];
-		        if (d.getElementById(id)) return;
-  		        js = d.createElement(s); js.id = id; js.type = 'text/javascript';
-  		        js.src = 'https://platform.twitter.com/widgets.js';
-		        fjs.parentNode.insertBefore(js, fjs);
-
-		        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-		    })(document, 'script', 'twitter-wjs');
-        </script>
     </body>
 </html>
