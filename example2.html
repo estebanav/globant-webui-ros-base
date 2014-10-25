@@ -24,14 +24,17 @@
                 <h1 class="text-center">Globant Rosario HACKATHON</h1>
             </div>
             <div class="row">
-                <div class="col-xs-6 col-md-6 text-center">
-                    <a href="example1.html">Example 1 - Messages</a>
-                </div>
-                <div class="col-xs-6 col-md-6 text-center">
-                    <a href="example2.html">Example 2 - Favorites</a>
+                <div class="col-xs-12 col-md-12 text-center">
+                    <input type="text" id="js-txt-name" placeholder="Your Name"/>
+                    <input type="text" id="js-txt-message" placeholder="The Message"/>
                 </div>
             </div>
-            
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h4>List of messages stored</h4>
+                    <div id="js-messages"></div>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
@@ -41,6 +44,9 @@
         </div>
 
         <script src="js/vendor/jquery-1.11.1.min.js"></script>   
-        
+        <!-- Firebase client -->
+        <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+        <!-- Main app -->
+        <script src="js/example2.js"></script>        
     </body>
 </html>

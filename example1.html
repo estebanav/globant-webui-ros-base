@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Globant's Hackthlon HTML5 Boilerplate</title>
+        <meta name="description" content="Base template for Globant's Hackthlon HTML5 Boilerplate">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">	
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <style>
+            .remove{
+                display: none;
+            }
+            .favorited .add{
+                    display: none;
+            }
+            .favorited .remove{
+                    display: block;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="page-header">
+                <h1 class="text-center">Globant Rosario HACKATHON</h1>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h4>List of movies</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>IMDB</th>
+                                <th>Name</th>
+                                <th>Year</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-movie="tt0109830">
+                                <td>tt0109830</td>
+                                <td>Forrest Gump</td>
+                                <td>1994</td>
+                                <td>
+                                    <button class="add">Add To Favorites</button>
+                                    <button class="remove">Remove from Favorites</button>
+                                </td>
+                            </tr>
+                            <tr data-movie="tt0175142">
+                                <td>tt0175142</td>
+                                <td>Scary Movie</td>
+                                <td>2000</td>
+                                <td>
+                                    <button class="add">Add To Favorites</button>
+                                    <button class="remove">Remove from Favorites</button>
+                                </td>
+                            </tr>
+                            <tr data-movie="tt0088763">
+                                <td>tt0088763</td>
+                                <td>Back to the Future</td>
+                                <td>1985</td>
+                                <td>
+                                    <button class="add">Add To Favorites</button>
+                                    <button class="remove">Remove from Favorites</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p class="text-muted">&copy; Globant 2014</p>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>   
+        <!-- Firebase client -->
+        <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+        <!-- Main app -->
+        <script src="js/example1.js"></script>        
+    </body>
+</html>
